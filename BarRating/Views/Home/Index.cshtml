@@ -1,0 +1,19 @@
+﻿@model BarRating.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Bar Rating System</h1>
+    <p>Track and explore the best bars with our community reviews.</p>
+
+    <div>
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Total Users: @Model.UserCount</li>
+            <li>Total Bars: @Model.BarCount</li>
+            <li>Total Reviews: @Model.ReviewCount</li>
+        </ul>
+    </div>
+</div>
